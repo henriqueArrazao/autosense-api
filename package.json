@@ -9,7 +9,9 @@
     "prisma:migrate": "prisma migrate dev",
     "prisma:seed": "prisma db seed",
     "prisma:push": "prisma db push",
-    "start": "node dist/server.js"
+    "build": "prisma generate && tsc",
+    "start": "node dist/app.js",
+    "postinstall": "prisma generate"
   },
   "author": "",
   "license": "ISC",
