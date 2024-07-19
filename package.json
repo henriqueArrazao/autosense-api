@@ -16,5 +16,8 @@
   "description": "",
   "devDependencies": {
     "ts-node-dev": "^2.0.0"
+  },
+  "prisma": {
+    "seed": "ts-node ./prisma/seed.ts"
   }
 }
